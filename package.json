@@ -1,5 +1,5 @@
 {
-  "name": "react-flash",
+  "name": "@raysuy/react-flash",
   "version": "0.1.0",
   "description": "This react flash component will self destruct in...",
   "main": "./dist/index.js",
@@ -9,7 +9,9 @@
     "url": "https://github.com/xRayUnlimited/react-flash"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:dev": "NODE_ENV=development webpack",
+    "build:prod": "NODE_ENV=production webpack -p",
+    "prepublish": "npm run build:prod"
   },
   "keywords": [],
   "author": "RS",
@@ -23,6 +25,8 @@
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.7.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "styled-components": "^3.2.6",

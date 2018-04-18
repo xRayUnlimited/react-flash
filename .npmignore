@@ -3,3 +3,4 @@ src
 webpack.config.js
 .gitignore
 yarn.lock
+.eslintrc.json
